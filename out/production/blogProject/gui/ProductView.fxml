@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllor.ProductViewControllor">
+   <children>
+      <HBox alignment="CENTER" layoutX="675.0" layoutY="14.0" prefHeight="36.0" prefWidth="31.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TableView fx:id="TableProduct" layoutX="335.0" layoutY="163.0" prefHeight="320.0" prefWidth="588.0" styleClass="column-header" AnchorPane.leftAnchor="335.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="43.0" text="Id" />
+            <TableColumn fx:id="title" prefWidth="89.0" text="title" />
+            <TableColumn fx:id="image" prefWidth="83.0" text="image" />
+            <TableColumn fx:id="user_id" prefWidth="101.0" text="user_id" />
+            <TableColumn fx:id="description" prefWidth="118.0" text="description" />
+            <TableColumn fx:id="editCol" prefWidth="118.0" text="edit" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <HBox layoutX="544.0" layoutY="95.0" prefHeight="52.0" prefWidth="224.0" spacing="20.0">
+         <children>
+            <FontAwesomeIconView fill="#2196f3" glyphName="USER_PLUS" onMouseClicked="#getAddView" size="45" styleClass="btn" />
+            <FontAwesomeIconView fill="#00e676" glyphName="REFRESH" onMouseClicked="#refresh" size="45" styleClass="btn" text="" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
